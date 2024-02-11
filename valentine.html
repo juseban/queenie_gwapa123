@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will you be my Valentine?</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #noButton {
+    background-color: #FF5733;
+    transition: width 0.5s ease;
+  }
+  
+  #yesButton {
+    background-color: #4CAF50;
+    transition: width 0.5s ease;
+  }
+</style>
+</head>
+<body>
+
+<h1>Will you be my Valentine?</h1>
+
+<button id="yesButton" onclick="yesClicked()">YES</button>
+<button id="noButton" onclick="noClicked()">NO</button>
+
+<script>
+function yesClicked() {
+  alert("Yay! Happy Valentine's Day!");
+}
+
+function noClicked() {
+  alert("Are you really sure?");
+  document.getElementById("yesButton").style.width = "300px";
+  document.getElementById("noButton").style.width = "100px";
+}
+</script>
+
+</body>
+</html>
